@@ -48,6 +48,20 @@ app_license = "mit"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
+# Fixtures
+fixtures = [
+    {
+        "dt": "Custom Field", "filters": [
+            [
+                "name", "in", [
+                    "Sales Invoice-custom_retentions",
+				    "Sales Invoice-custom_retentions_and_deductions"
+                ]
+            ]
+        ]
+    },
+]
+
 # Svg Icons
 # ------------------
 # include app icons in desk
@@ -241,4 +255,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
