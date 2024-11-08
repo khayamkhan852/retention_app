@@ -7,7 +7,12 @@
  "engine": "InnoDB",
  "field_order": [
   "retention_category_section",
-  "retention_category"
+  "retention_category",
+  "account_head",
+  "tax_rate",
+  "column_break_mvmx",
+  "company",
+  "cost_center"
  ],
  "fields": [
   {
@@ -21,16 +26,53 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Retention Category",
+   "label": "Category",
+   "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "column_break_mvmx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "account_head",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Account Head",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "default": ":Company",
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "tax_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Tax Rate",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-06 15:14:21.519827",
+ "modified": "2024-11-08 12:26:08.122462",
  "modified_by": "Administrator",
  "module": "Retention App",
- "name": "Retention Category",
+ "name": "Retention And Deduction Category",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

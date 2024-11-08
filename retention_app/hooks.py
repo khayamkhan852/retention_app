@@ -43,6 +43,9 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
+doctype_js = {
+    "Sales Invoice" : "public/js/sales_invoice_custom.js"
+}
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -55,7 +58,8 @@ fixtures = [
             [
                 "name", "in", [
                     "Sales Invoice-custom_retentions",
-				    "Sales Invoice-custom_retentions_and_deductions"
+				    "Sales Invoice-custom_retentions_and_deductions",
+                    "Sales Invoice-custom_retention_and_deduction_total"
                 ]
             ]
         ]

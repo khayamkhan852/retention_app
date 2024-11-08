@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestRetentionCategory(FrappeTestCase):
+class TestRetentionAndDeductionCategory(FrappeTestCase):
 	pass
